@@ -1,0 +1,48 @@
+{
+ "_meta": {
+  "note": "bpm_loss_from_logits fixed CPU golden (forward-KL, mass-conserving).",
+  "vocab_size": 6,
+  "rows": 3
+ },
+ "student_logits": [
+  [
+   2.0,
+   1.0,
+   0.0,
+   -1.0,
+   0.5,
+   -0.5
+  ],
+  [
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  [
+   -1.0,
+   -1.0,
+   -1.0,
+   -1.0,
+   -1.0,
+   -1.0
+  ]
+ ],
+ "position_targets": {
+  "0": {
+   "0": 0.7,
+   "1": 0.2,
+   "2": 0.1
+  },
+  "1": {
+   "3": 0.5,
+   "4": 0.3
+  }
+ },
+ "loss_sum": 2.485018730163574,
+ "cp_rows": 2.0,
+ "bpm_ce_mean": 1.242509365081787,
+ "bpm_local_rows": 2.0
+}

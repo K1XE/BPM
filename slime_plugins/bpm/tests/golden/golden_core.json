@@ -1,0 +1,266 @@
+{
+ "_meta": {
+  "note": "BPM pure-core golden baseline: byte maps and expected partitions for the torch-free core.",
+  "tea_byte_map_hex": {
+   "1": "3132",
+   "2": "313230",
+   "3": "39",
+   "4": "3133",
+   "5": "33",
+   "6": "31",
+   "10": "e4b8ad",
+   "11": "e4b8ade69687",
+   "12": "e69687",
+   "20": "f09f9880",
+   "30": "61",
+   "31": "6162",
+   "900": ""
+  },
+  "stu_content_hex": {
+   "100": "31",
+   "101": "32",
+   "102": "39",
+   "103": "33",
+   "104": "30",
+   "110": "e4b8ad",
+   "111": "e4b8ade69687",
+   "113": "f09f9880"
+  },
+  "stu_special_hex": {
+   "998": "f0",
+   "999": "3c656f733e"
+  },
+  "stu_super_hex": {
+   "120": "61",
+   "121": "6162",
+   "122": "62"
+  }
+ },
+ "build_phi": {
+  "1": 100,
+  "2": 100,
+  "3": 102,
+  "4": 100,
+  "5": 103,
+  "6": 100,
+  "10": 110,
+  "11": 111,
+  "12": -1,
+  "20": 113,
+  "30": -1,
+  "31": -1,
+  "900": -1
+ },
+ "student_first_token_queries": [
+  {
+   "query_bytes_hex": "313230",
+   "with_specials": 100,
+   "specials_excluded": 100
+  },
+  {
+   "query_bytes_hex": "3132",
+   "with_specials": 100,
+   "specials_excluded": 100
+  },
+  {
+   "query_bytes_hex": "39",
+   "with_specials": 102,
+   "specials_excluded": 102
+  },
+  {
+   "query_bytes_hex": "33",
+   "with_specials": 103,
+   "specials_excluded": 103
+  },
+  {
+   "query_bytes_hex": "37",
+   "with_specials": null,
+   "specials_excluded": null
+  },
+  {
+   "query_bytes_hex": "e4b8ad",
+   "with_specials": 110,
+   "specials_excluded": 110
+  },
+  {
+   "query_bytes_hex": "e4b8ade69687",
+   "with_specials": 111,
+   "specials_excluded": 111
+  },
+  {
+   "query_bytes_hex": "f09f9880",
+   "with_specials": 113,
+   "specials_excluded": 113
+  },
+  {
+   "query_bytes_hex": "f09f",
+   "with_specials": 998,
+   "specials_excluded": null
+  },
+  {
+   "query_bytes_hex": "3c656f733e",
+   "with_specials": 999,
+   "specials_excluded": null
+  }
+ ],
+ "teacher_dist_trie": {
+  "dist": {
+   "1": 0.3,
+   "2": 0.2,
+   "3": 0.15,
+   "4": 0.1,
+   "5": 0.05,
+   "6": 0.05,
+   "10": 0.1,
+   "11": 0.05
+  },
+  "prefix_mass": [
+   {
+    "prefix_hex": "",
+    "trie": 1.0,
+    "reference": 1.0
+   },
+   {
+    "prefix_hex": "31",
+    "trie": 0.65,
+    "reference": 0.65
+   },
+   {
+    "prefix_hex": "3132",
+    "trie": 0.5,
+    "reference": 0.5
+   },
+   {
+    "prefix_hex": "313230",
+    "trie": 0.2,
+    "reference": 0.2
+   },
+   {
+    "prefix_hex": "3133",
+    "trie": 0.1,
+    "reference": 0.1
+   },
+   {
+    "prefix_hex": "39",
+    "trie": 0.15,
+    "reference": 0.15
+   },
+   {
+    "prefix_hex": "33",
+    "trie": 0.05,
+    "reference": 0.05
+   },
+   {
+    "prefix_hex": "e4b8ad",
+    "trie": 0.15000000000000002,
+    "reference": 0.15000000000000002
+   },
+   {
+    "prefix_hex": "e4b8ade69687",
+    "trie": 0.05,
+    "reference": 0.05
+   },
+   {
+    "prefix_hex": "e4",
+    "trie": 0.15000000000000002,
+    "reference": 0.15000000000000002
+   },
+   {
+    "prefix_hex": "37",
+    "trie": 0.0,
+    "reference": 0.0
+   }
+  ],
+  "exact_mass": [
+   {
+    "target_hex": "3132",
+    "trie": 0.3,
+    "reference": 0.3
+   },
+   {
+    "target_hex": "313230",
+    "trie": 0.2,
+    "reference": 0.2
+   },
+   {
+    "target_hex": "31",
+    "trie": 0.05,
+    "reference": 0.05
+   },
+   {
+    "target_hex": "3133",
+    "trie": 0.1,
+    "reference": 0.1
+   },
+   {
+    "target_hex": "e4b8ad",
+    "trie": 0.1,
+    "reference": 0.1
+   },
+   {
+    "target_hex": "e4b8ade69687",
+    "trie": 0.05,
+    "reference": 0.05
+   },
+   {
+    "target_hex": "3939",
+    "trie": 0.0,
+    "reference": 0.0
+   }
+  ]
+ },
+ "first_token_partition": [
+  {
+   "name": "digits",
+   "tea_bytes_hex": [
+    "3132"
+   ],
+   "tea_dist": {
+    "1": 0.55,
+    "2": 0.25,
+    "3": 0.15,
+    "4": 0.03,
+    "5": 0.02
+   },
+   "offset": 0,
+   "target": {
+    "100": 0.8300000000000001,
+    "102": 0.15,
+    "103": 0.02
+   },
+   "residual": 0.0
+  },
+  {
+   "name": "multibyte_cjk",
+   "tea_bytes_hex": [
+    "e4b8ad"
+   ],
+   "tea_dist": {
+    "10": 0.6,
+    "11": 0.3,
+    "12": 0.1
+   },
+   "offset": 0,
+   "target": {
+    "110": 0.8999999999999999
+   },
+   "residual": 0.10000000000000009
+  },
+  {
+   "name": "codex_supertoken",
+   "tea_bytes_hex": [
+    "6162"
+   ],
+   "tea_dist": {
+    "30": 0.4,
+    "31": 0.6
+   },
+   "offset": 0,
+   "target": {
+    "120": 0.4,
+    "121": 0.6
+   },
+   "residual": 0.0
+  }
+ ]
+}
